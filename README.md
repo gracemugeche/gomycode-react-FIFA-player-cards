@@ -1,13 +1,48 @@
-# React + Vite
+# ⚽ React Players Card App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Overview
 
-Currently, two official plugins are available:
+React Players Card App is a web application built using **Vite**, **React**, and **React-Bootstrap**. The project displays a stylish list of football players, each shown inside a Bootstrap card. Each player’s card showcases:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Full name
+- Team
+- Nationality
+- Jersey number
+- Age
+- Player image
 
-## Expanding the ESLint configuration
+The player data is stored in a separate JavaScript file and rendered dynamically using reusable React components. The app uses clean design, organized components, default props, and inline styling.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# gomycode-react-FIFA-player-cards
+## 🔧 How It Works
+
+- The app has a `players.js` file containing an array of player objects.
+- A `Player` component renders a Bootstrap-styled card using each player's data.
+- A `PlayersList` component maps through the players and displays each card.
+- Images are stored inside the `public/images` folder and referenced via their relative paths.
+- Bootstrap is imported into the `main.jsx` file for styling support.
+
+## 📂 Folder Structure
+
+src/
+├── App.jsx
+├── main.jsx
+├── Player.jsx
+├── PlayersList.jsx
+├── players.js
+
+public/
+└── images/
+├── messi.png
+├── ronaldo.png
+├── mbappe.png
+└── neymar.png
+
+
+## ✍️ Author
+
+**Grace Wambui Mugece**
+
+## ✅ Conclusion
+
+This project is a fun and practical way to explore React fundamentals like component-based architecture, props, defaultProps, and dynamic rendering. It's a clean foundation to expand into more complex apps while learning to work with external styling libraries like Bootstrap.
+
