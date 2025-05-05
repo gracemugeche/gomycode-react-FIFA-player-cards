@@ -1,5 +1,7 @@
+//Define an array of player objects
 const players = [
     {
+          // First player details
       name: "Lionel Messi",
       team: "Inter Miami",
       nationality: "Argentina",
@@ -8,6 +10,7 @@ const players = [
       image: "/images/messi.png"
     },
     {
+      // Second player details
       name: "Cristiano Ronaldo",
       team: "Al Nassr",
       nationality: "Portugal",
@@ -16,6 +19,7 @@ const players = [
       image: "/images/ronaldo.png"
     },
     {
+          // Third player details
       name: "Kylian Mbappé",
       team: "Paris Saint-Germain",
       nationality: "France",
@@ -24,6 +28,7 @@ const players = [
       image: "/images/mbappe.png"
     },
     {
+       // Fourth player details
       name: "Neymar Jr.",
       team: "Al Hilal",
       nationality: "Brazil",
