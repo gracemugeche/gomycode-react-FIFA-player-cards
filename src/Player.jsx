@@ -1,6 +1,9 @@
+// Import React and Bootstrap Card component
 import React from "react";
 import { Card } from "react-bootstrap";
 
+
+// Inline styles for the player card
 const cardStyle = {
   width: '18rem',
   margin: '1rem',
@@ -8,8 +11,10 @@ const cardStyle = {
   boxShadow: '2px 2px 10px rgba(0,0,0,0.1)'
 };
 
+// The Player component receives player details via props
 const Player = ({ name, team, nationality, jerseyNumber, age, image }) => {
   return (
+        // Bootstrap Card with custom styling
     <Card style={cardStyle}>
       <Card.Img variant="top" src={image} alt={name} />
       <Card.Body>
@@ -25,6 +30,7 @@ const Player = ({ name, team, nationality, jerseyNumber, age, image }) => {
   );
 };
 
+// Default values in case props are not provided
 Player.defaultProps = {
   name: "Unknown",
   team: "Free Agent",
@@ -34,4 +40,6 @@ Player.defaultProps = {
   image: "https://via.placeholder.com/150"
 };
 
+
+// Export the Player component for use in other files
 export default Player;
